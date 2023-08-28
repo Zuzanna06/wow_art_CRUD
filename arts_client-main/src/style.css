@@ -1,0 +1,158 @@
+.logo {
+    margin: 25px;
+    width: auto;
+    border-radius: px;
+    padding: 5px 20;
+    height: auto; /* Maintient le rapport hauteur-largeur du logo */
+
+    box-shadow: 0 2px 3px rgb(0, 0, 0, 0.307);
+   
+   
+  }
+ 
+
+
+
+.App {
+    height: 100vh;
+    padding: 0 20px; /* Réduit les marges horizontales pour les écrans plus petits */
+    /* padding: 0 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+h1 {
+    margin-bottom: 50px;
+  }
+
+
+textarea {
+    padding: 10px;
+  }
+
+.arts{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur les écrans étroits */
+    gap: 5px;
+    padding-bottom: 60px;
+}
+
+.art{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center; /* Centre le contenu dans les écrans étroits */
+}
+
+img{
+    /* width: 300px;
+    height: 300px; */
+    max-width: 100%; /* Assurez-vous que les images ne dépassent pas de leur conteneur */
+    height: auto; /* Maintient le rapport hauteur-largeur de l'image */
+    object-fit: cover;
+    background-color: #CBEEE3;
+}
+.link-container {
+    display: inline-block;
+    margin-right: 0px; /* Espacement entre les liens (ajustez selon vos besoins) */
+}
+.delete, .update{
+    
+     /* padding: 3px 6px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: white; */
+/* 
+    border: 1px solid #C42100; */
+    /* padding: 1px 4px; */
+    /* background-color: #C42100; */
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+/* .delete,
+.update{
+    border: 1px solid #F5BFBF;
+    color: #F20A64;
+} */
+.delete:hover {
+    background-color: #F5BFBF;
+    border-color: #F20A64;
+    color: #F20A64;
+}
+
+.update:hover {
+    background-color: #CCCCF3;
+    border-color: #8B8BEA;
+    color: #8B8BEA;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.pDesriptif{
+    width: 190px;
+
+}
+input {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+.formButton{
+    border: none;
+    padding: 10px;
+    background-color: #F48E4A;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.addBtn{
+    border: 1px solid #C42100;
+    padding: 1px 4px;
+    background-color: #C42100;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Media Queries pour les écrans plus petits */
+@media screen and (max-width: 768px) {
+    .App {
+        padding: 0 10px; /* Réduire encore plus les marges pour les écrans très petits */
+    }
+    
+
+        
+    .arts {
+        flex-direction: column; /* Aligner verticalement les éléments sur les écrans étroits */
+        align-items: center;
+    }
+
+    .art {
+        width: 100%; /* Prend toute la largeur sur les écrans étroits */
+    }
+
+    .h1 {
+        margin-bottom: 20px;
+      }
+
+    .logo {
+        border-radius: px;
+        padding: 10px;
+    
+        }
+}

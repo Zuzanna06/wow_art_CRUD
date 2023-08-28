@@ -1,0 +1,17 @@
+### GET request with a header
+GET http://localhost:8000/arts
+Accept: application/json
+### GET request with a header and id
+GET http://localhost:8000/arts/3
+Accept: application/json
+### Send POST request with json body
+POST http://localhost:8000/arts
+Content-Type: application/json
+
+{
+  "title": "Title from client",
+  "desc": "Desc from client",
+  "price": 12,
+  "cover": "https://picsum.photos/200"
+}
+
