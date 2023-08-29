@@ -1,20 +1,17 @@
 .logo {
     margin: 25px;
     width: auto;
-    border-radius: px;
-    padding: 5px 20;
-    height: auto; /* Maintient le rapport hauteur-largeur du logo */
-
+    border-radius: 10px;
+    padding: 5px 20px;
+    height: auto; 
     box-shadow: 0 2px 3px rgb(0, 0, 0, 0.307);
-   
    
   }
  
 
 
 
-.App {
-    height: 100vh;
+ .App {
     padding: 0 20px; /* Réduit les marges horizontales pour les écrans plus petits */
     /* padding: 0 100px; */
     display: flex;
@@ -151,7 +148,7 @@ input {
       }
 
     .logo {
-        border-radius: px;
+        border-radius: 5px;
         padding: 10px;
     
         }

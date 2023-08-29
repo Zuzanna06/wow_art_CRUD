@@ -32,7 +32,9 @@ const Arts = () => {
     return (
         
         <div>
+            <div>
             <Logo />
+            </div>
 
             <h1 className="titre">- Arts gallery - Cabinet de Curiosités -</h1>
             <h2>Galerie de Vente de produits authentiques! </h2>
